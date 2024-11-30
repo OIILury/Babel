@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: url('../img/babelIndex.png') no-repeat center center fixed; /* Remplacez 'babelIndex.png' par votre image */
+    background-size: cover; /* Adapte l'image à l'écran */
+    position: relative;
+}
+
+/* Hotspot styling */
+.hotspot {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+}
+
+.hotspot:hover {
+    transform: scale(1.2); /* Agrandit le hotspot au survol */
+    background: rgba(255, 255, 255, 0);
+}
+
+/* Image dans le hotspot */
+.hotspot img {
+    width: 100px; /* Taille de l'image */
+    height: 100px;
+    margin-bottom: 8px; /* Espace entre l'image et le texte */
+    transition: transform 0.3s ease;
+}
+
+.hotspot:hover img {
+    transform: rotate(10deg);
+}
+
