@@ -1,0 +1,110 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Barre de menu */
+  header {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .menu-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .menu-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Conteneur principal */
+  #image-viewer {
+    position: relative;
+    width: 80%;
+    height: calc(100% - 50px);
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Image */
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Zones de clic */
+  .click-zone {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  #left-zone {
+    left: 0;
+  }
+  
+  #right-zone {
+    right: 0;
+  }
+  
+  /* Contrôles (haut et bas) */
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #666;
+  }
+  
+  select {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .chapter-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #page-counter, #page-counter-bottom {
+    font-size: 14px;
+    color: #fff;
+  }
+  

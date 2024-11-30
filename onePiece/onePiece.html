@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visionneuse d'images</title>
+  <link rel="stylesheet" href="onePieceStyle.css">
+</head>
+<body>
+  <!-- Barre de menu -->
+  <header>
+    <nav>
+      <a href="../index.html" class="menu-link">Home</a>
+    </nav>
+  </header>
+
+  <!-- Conteneur principal -->
+  <div>
+    <div id="controls-top" class="controls">
+      <button onclick="showPreviousChapter()">Chapitre précédent</button>
+      <div class="chapter-controls">
+        <select id="chapter-selector" onchange="changeChapter()"></select>
+        <span id="page-counter">1/1</span>
+      </div>
+      <button onclick="showNextChapter()">Chapitre suivant</button>
+    </div>
+    
+    <div id="image-viewer">
+      <div id="left-zone" class="click-zone" onclick="showPreviousImage()"></div>
+      <img id="current-image" src="images/chap1/page1.png" alt="Image actuelle">
+      <div id="right-zone" class="click-zone" onclick="showNextImage()"></div>
+    </div>
+
+    <div id="controls-bottom" class="controls">
+      <button onclick="showPreviousChapter()">Chapitre précédent</button>
+      <div class="chapter-controls">
+        <select id="chapter-selector" onchange="changeChapter()"></select>
+        <span id="page-counter">1/1</span>
+      </div>
+      <button onclick="showNextChapter()">Chapitre suivant</button>
+    </div>
+  </div>
+
+  <script src="onePieceScript.js"></script>
+</body>
+</html>
