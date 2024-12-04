@@ -1,8 +1,15 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: './',
+  base: '/Babel/',
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      input: {
+        main: '/index.html',
+        onePiece: '/onePiece/onePiece.html'
+      }
+    }
   }
 }) 
